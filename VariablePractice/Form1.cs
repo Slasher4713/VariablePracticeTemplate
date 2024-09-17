@@ -24,7 +24,7 @@ namespace VariablePractice
         {
             String playerName = "Wanye Gretzky";
             int playerNumber = 99;
-            outputLabel.Text += $"\n{playerName} is number {playerNumber}";
+            outputLabel.Text = $"\n{playerName} is number {playerNumber}";
         }
 
         private void outputLabel_Click(object sender, EventArgs e)
@@ -37,7 +37,7 @@ namespace VariablePractice
             double hours = 25;
             double pay = 18.75;
             double earned = hours * pay;
-            outputLabel.Text += $"\n{hours} hours at {pay} per hours equals {earned}";
+            outputLabel.Text = $"\n{hours} hours at {pay} per hours equals {earned}";
         }
 
         private void circleButton_MouseClick(object sender, MouseEventArgs e)
@@ -45,7 +45,7 @@ namespace VariablePractice
             double radius = 15;
             double pi = 3.14;
             double area = radius * radius * pi;
-            outputLabel.Text += $"\nThe area of a circle with a radius of {radius}cm is {area}cm^2";
+            outputLabel.Text = $"\nThe area of a circle with a radius of {radius}cm is {area}cm^2";
         }
 
         private void button1_MouseClick(object sender, MouseEventArgs e)
@@ -55,7 +55,7 @@ namespace VariablePractice
             double costPerMetre = 19.95;
             double areaCarpet = length * width;
             double totalCost = length * width * costPerMetre;
-            outputLabel.Text += $"\nThe area of a room with dimensions {length}m x {width}m is {areaCarpet}m^2";
+            outputLabel.Text = $"\nThe area of a room with dimensions {length}m x {width}m is {areaCarpet}m^2";
             outputLabel.Text += $"\nThe cost to carpet this area is ${costPerMetre} per square metre is ${totalCost}";
         }
 
@@ -69,7 +69,7 @@ namespace VariablePractice
             double change = money - totalCost;
 
            
-            outputLabel.Text += $"\nBill of Sale";
+            outputLabel.Text = $"\nBill of Sale";
             outputLabel.Text += $"\n\nShirt:          ${shirt}";
             outputLabel.Text += $"\nTax:            ${taxAmount}";
             outputLabel.Text += $"\nTotal:          ${totalCost}";
